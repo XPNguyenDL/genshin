@@ -1,0 +1,146 @@
+
+:root {
+    --white-color: #fff;
+}
+
+
+html {
+    margin: 0;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    /* 10px */
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+
+a {
+    text-decoration: none;
+    
+}
+
+/* animation */
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* download */
+
+.download {
+    width: 200px;
+    background: #FFCF0D;
+    font-size: 2rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.download a {
+    color: #5d4b28;
+
+}
+
+/* login */
+
+.login__btn {
+    display: block;
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    overflow: visible;
+    background: transparent;
+    color: #89898a;
+    margin-right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.login__btn strong {
+    font-size: 1.4rem;
+    text-decoration: underline;
+}
+
+.logo_login {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: 12px;
+    object-fit: contain;
+}
+
+.login__dropdown--menu {
+    position: absolute;
+    top: 125%;
+    right: -16px;
+    width: 250px;
+    height: 80px;
+    /* padding: 30px 0px; */
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 6px;
+    display: none;
+}
+
+.login__btn:hover .login__dropdown--menu{
+    display: flex;
+}
+
+.login__dropdown--menu a:first-child::after {
+    content: "";
+    position: absolute;
+    top: 32%;
+    left: 126px;
+    border-right: 2.5px solid #89898a;
+    height: 30px;
+}
+
+.login__dropdown--menu::before {
+    content: "";
+    border-style: solid;
+    border-width: 16px 23px;
+    border-color: transparent transparent rgba(0, 0, 0, 0.9) transparent;
+    position: absolute;
+    top: -32px;
+    right: 8px;
+
+}
+
+.login__dropdown--menu a {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #89898a;
+}
+
+.login__dropdown--menu a:hover {
+    color: var(--white-color);
+
+}
+
+.login__btn:hover,
+.login__btn:hover .logo_login{
+    color: var(--white-color);
+    opacity: 1;
+}
+
+
+/* videos */
