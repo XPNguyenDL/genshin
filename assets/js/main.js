@@ -57,3 +57,27 @@ function handleChangeSlider(direction) {
     postionX = -(sliderItemWidth * (direction - 1));
     sliderMain.style = `transform: translateX(${postionX}px)`;
 }
+
+
+const posterBTN = document.querySelector('.js-poster__btn');
+const modalVideo = document.querySelector('.js-modalvideo')
+const closeVideo = document.querySelector('.js-close-video')
+const modalContainer = document.querySelector('.js-video-container')
+const reloadVideo = document.querySelector('.js-video-pv--more');
+
+function showVideoPV() {
+    modalVideo.classList.add('open')
+    document.querySelector('.js-video-pv--more').contentDocument.location.reload(true);
+}
+
+function hideVideoPV() {
+    modalVideo.classList.remove('open')
+}
+
+posterBTN.addEventListener('click', showVideoPV)
+closeVideo.addEventListener('click', hideVideoPV)
+modalVideo.addEventListener('click', hideVideoPV)
+
+modalContainer.addEventListener('click', function(evnet) {
+    evnet.stopPropagation();
+});

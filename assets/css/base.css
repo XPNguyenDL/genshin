@@ -26,6 +26,11 @@ a {
     
 }
 
+
+.open {
+    display: block !important;
+}
+
 /* animation */
 
 @keyframes fadein {
@@ -144,3 +149,44 @@ a {
 
 
 /* videos */
+
+.modal-video {
+    display: none;
+}
+
+.video {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    z-index: 9000;
+}
+
+.video-pv {
+    position: absolute;
+    left: 311px;
+    width: 896px;
+    height: 504px;
+}
+
+.video-pv--more {
+    border-radius: 3px;
+    
+}
+
+.close-video {
+    position: absolute;
+    top: 5px;
+    right: -50px;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.close-video:hover {
+    opacity: 1;
+}
