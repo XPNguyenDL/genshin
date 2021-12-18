@@ -169,9 +169,10 @@ a {
 
 .video-pv {
     position: absolute;
-    left: 311px;
+    left: 50%;
     width: 896px;
     height: 504px;
+    transform: translateX(-50%);
 }
 
 .video-pv--more {

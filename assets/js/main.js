@@ -74,6 +74,7 @@ function hideVideoPV() {
     modalVideo.classList.remove('open')
 }
 
+
 posterBTN.addEventListener('click', showVideoPV)
 closeVideo.addEventListener('click', hideVideoPV)
 modalVideo.addEventListener('click', hideVideoPV)
