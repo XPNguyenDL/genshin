@@ -81,4 +81,5 @@ modalVideo.addEventListener('click', hideVideoPV)
 
 modalContainer.addEventListener('click', function(evnet) {
     evnet.stopPropagation();
+    
 });
