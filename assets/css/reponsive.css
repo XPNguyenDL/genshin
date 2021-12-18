@@ -84,4 +84,8 @@
         width: 60%;
         height: 30%;
     }
+
+    .bg-video {
+        object-position: 33% 22%;
+    }
 }
